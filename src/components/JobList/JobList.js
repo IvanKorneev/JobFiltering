@@ -9,6 +9,7 @@ const JobList = () => {
     const dispatch = useDispatch();
     const handelAddFilter = (filter) => {
         dispatch(addFilter(filter))
+
     };
     return (
         <div className='job-list'>
