@@ -1,4 +1,6 @@
 import {combineReducers} from "redux";
-export  const rootReducer = combineReducers({
+import {positionReducers} from "./positions/position-reducers";
 
+export const rootReducer = combineReducers({
+    position: positionReducers,
 });
