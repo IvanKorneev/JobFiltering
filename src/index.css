@@ -34,14 +34,14 @@ body {
 }
 
 .container {
-  width: 100;
+  width: 100%;
   padding: 0 0.75rem;
   margin: 0 auto;
 }
 
 .header {
   min-height: 156px;
-  background-image: url(./assets/images/bg-header-mobile.svg);
+  background-image: url(./components/assets/images/bg-header-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--primary);
@@ -212,7 +212,7 @@ body {
 
 @media (min-width: 1024px) {
   .header {
-    background-image: url(./assets/images/bg-header-desktop.svg);
+    background-image: url(./components/assets/images/bg-header-desktop.svg);
   }
   .container {
     max-width: 1000px;

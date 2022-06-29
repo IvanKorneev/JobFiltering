@@ -1,3 +1,7 @@
+import TheHeader from "../Header";
+import FilterPanel from "../FilterPanel";
+import JobList from "../JobList";
+
 const App = () => {
     return (
         <>

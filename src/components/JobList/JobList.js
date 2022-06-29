@@ -1,3 +1,6 @@
+import JobPosition from "../JobPosition";
+import data from '../../mock/data.json'
+
 const JobList = () => {
     return (
         <div className='job-list'>

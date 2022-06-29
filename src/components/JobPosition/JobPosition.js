@@ -1,3 +1,7 @@
+import Stack from "../Stack";
+import Badge from "../Badge";
+import Card from "../Card";
+
 const JobPosition = ({
                          id,
                          company,

@@ -1,4 +1,5 @@
-import {ReactComponent as Remove} from '../assets/images/icon-remove.svg';
+
+import {ReactComponent as Remove} from '../../components/assets/images/icon-remove.svg'
 const Badge = ({
                    variant = 'basic',
                    colorScheme = 'light',

@@ -1,3 +1,7 @@
+import Card from "../Card";
+import Stack from "../Stack";
+import Badge from "../Badge";
+
 const FilterPanel = () => {
     return (
         <Card className="filter-panel">
