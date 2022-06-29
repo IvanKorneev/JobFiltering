@@ -1,6 +1,6 @@
-export const ADD_POSITION = 'ADD_POSITION';
+export const GET_POSITIONS = 'ADD_POSITIONS';
 
-export const addPosition = (position) => ({
-    type: ADD_POSITION,
-    position
+export const addPosition = (positions) => ({
+    type: GET_POSITIONS,
+    positions
 });
