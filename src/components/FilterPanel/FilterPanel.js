@@ -3,7 +3,7 @@ import Stack from "../Stack";
 import Badge from "../Badge";
 import {useDispatch, useSelector} from "react-redux";
 import {selectFilters} from "../../store/filters/filter-selectors";
-import {clearFilter} from "../../store/filters/filter-actions";
+import {clearFilter, removeFilter} from "../../store/filters/filter-actions";
 
 const FilterPanel = () => {
     const currentFilters = useSelector(selectFilters);
@@ -19,7 +19,8 @@ const FilterPanel = () => {
             <div className="filter-panel-wrapper">
                 <Stack>
                     {currentFilters.map(filter => (
-                        <Badge key={filter} variant="clearable">{filter}</Badge>
+                        <Badge key={filter} variant="clearable"
+                               onClick={() => dispatch(removeFilter(filter))}>{filter}</Badge>
                     ))}
                 </Stack>
 
