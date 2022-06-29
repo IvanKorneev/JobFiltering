@@ -1,11 +1,16 @@
 import Card from "../Card";
 import Stack from "../Stack";
 import Badge from "../Badge";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {selectFilters} from "../../store/filters/filter-selectors";
+import {clearFilter} from "../../store/filters/filter-actions";
 
 const FilterPanel = () => {
     const currentFilters = useSelector(selectFilters);
+    const dispatch = useDispatch();
+    const handlerClearFilter = () => {
+        dispatch(clearFilter)
+    }
     if (currentFilters.length === 0) {
         return null
     }
@@ -18,7 +23,7 @@ const FilterPanel = () => {
                     ))}
                 </Stack>
 
-                <button className='link'>Clear</button>
+                <button onClick={handlerClearFilter} className='link'>Clear</button>
             </div>
         </Card>
     )
